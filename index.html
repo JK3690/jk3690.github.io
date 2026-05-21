@@ -435,7 +435,7 @@
     box-shadow: 0 30px 80px rgba(191,0,255,0.15);
   }
   .project-card::before {
-    content: ''; position: absolute; inset: 0;
+    content: ''; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(135deg, rgba(191,0,255,0.05) 0%, transparent 60%);
     opacity: 0; transition: opacity .4s;
   }
@@ -454,7 +454,7 @@
     clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
   }
   .project-link {
-    position: absolute; top: 28px; right: 28px;
+    position: absolute; top: 28px; right: 28px; z-index: 10; pointer-events: auto;
     width: 36px; height: 36px; border: 1px solid rgba(191,0,255,0.3);
     display: flex; align-items: center; justify-content: center;
     color: var(--neon-purple); text-decoration: none; font-size: 16px; transition: all .3s;
@@ -963,8 +963,9 @@ body::after {
       <h2 class="section-title reveal" style="text-align:center;">PROJECTS</h2>
       <div class="section-line reveal" style="margin:0 auto 48px;"></div>
       <div class="projects-grid">
+
         <div class="project-card reveal reveal-delay-1">
-          <a href="https://github.com/JK3690/Student-Mental-Health-Analysis-" class="project-link">&#x2197;</a>
+          <a href="https://github.com/JK3690/Student-Mental-Health-Analysis-" class="project-link" target="_blank"> ↗ </a>
           <div class="project-num">// MISSION_001</div>
           <div class="project-title">Mind Over Data</div>
           <div class="project-desc">Analyzed student survey data to identify patterns between study habits and stress levels, translating raw responses into clear visual insights using Python and Matplotlib.</div>
@@ -972,11 +973,12 @@ body::after {
             <span class="tag">PYTHON</span>
             <span class="tag">SQL</span>
             <span class="tag">MATPLOTLIB</span>
-            <span class="tag">STREAMLIT</span>
+            <span class="tag"> STREAMLIT</span>
           </div>
         </div>
+
         <div class="project-card reveal reveal-delay-2">
-          <a href="#" class="project-link">&#x2197;</a>
+          <a href="https://jk3690.github.io/" class="project-link" target="_blank"> ↗ </a>
           <div class="project-num">// MISSION_002</div>
           <div class="project-title">SYNTHWAVE</div>
           <div class="project-desc">Designed and developed a sci-fi themed portfolio interface using pure HTML and CSS, focusing on UI consistency, animations, and user interaction.</div>
@@ -985,8 +987,9 @@ body::after {
             <span class="tag">CLAUDE AI</span>
           </div>
         </div>
+
         <div class="project-card reveal reveal-delay-2">
-          <a href="https://github.com/JK3690/Covid-Data-Analysis-Python" class="project-link">&#x2197;</a>
+          <a href="https://github.com/JK3690/Covid-Data-Analysis-Python" class="project-link" target="_blank"> ↗ </a>
           <div class="project-num">// MISSION_003</div>
           <div class="project-title">PANDEMIC DECODED</div>
           <div class="project-desc">Built a menu-driven COVID-19 data analysis tool to filter patient data and visualize trends across symptoms, comorbidities, and vaccination status.</div>
@@ -995,17 +998,19 @@ body::after {
             <span class="tag">MATPLOTLIB</span>
           </div>
         </div>
+
         <div class="project-card reveal reveal-delay-3">
-          <a href="#" class="project-link">&#x2197;</a>
+          <a href="https://github.com/JK3690/Customer-Intelligence-Recommendation-Engine" class="project-link" target="_blank"> ↗ </a>
           <div class="project-num">// MISSION_004</div>
           <div class="project-title">INSIGHT LOOP</div>
-          <div class="project-desc">Recommendation system designed to identify customer trends and generate tailored suggestions using behavioral & transactional dat..</div>
+          <div class="project-desc">Recommendation system designed to identify customer trends and generate tailored suggestions using behavioral & transactional data.</div>
           <div class="project-tags">
             <span class="tag">PYTHON</span>
-            <span class="tag">PANDAS</span
-            <span class="tag">STREAMLIT</span>
+            <span class="tag">PANDAS</span>
+            <span class="tag"> STREAMLIT</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
