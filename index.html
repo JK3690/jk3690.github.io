@@ -427,7 +427,7 @@
   .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
   .project-card {
     border: 1px solid rgba(191,0,255,0.2); padding: 36px;
-    background: rgba(10,0,30,0.7); position: relative; overflow: hidden;
+    background: rgba(10,0,30,0.7); position: relative; overflow-x: hidden; overflow-y: visible;
     transition: all .4s; cursor: none;
   }
   .project-card:hover {
@@ -473,7 +473,7 @@
     text-decoration: none; transition: all .3s; display: flex; align-items: center; gap: 10px;
     clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
   }
-  .contact-link.c { border-color: var(--cyan); color: var(--cyan); }
+  .contact-link.c { border-color: var(--cyan); color: var(--cyan);}
   .contact-link.p { border-color: var(--neon-purple); color: var(--neon-purple); }
   .contact-link.b { border-color: var(--neon-blue); color: var(--neon-blue); }
   .contact-link.c:hover { background: var(--cyan); color: var(--dark); box-shadow: var(--glow-cyan); }
@@ -773,7 +773,7 @@ body::after {
     <div class="timeline-item left">
       <div class="node"></div>
         <div class="content">
-          <img src="images/caterpillar.png" class="stage-icon-1">
+          <img src="images/caterpillar.png" class="stage-icon-1" alt="Caterpillar Image">
 
           <span class="year">2024</span>
           <span class="stage">CATERPILLAR</span>
@@ -784,7 +784,7 @@ body::after {
     <div class="timeline-item right">
       <div class="node"></div>
       <div class="content">
-        <img src="images/cocoon.png" class="stage-icon-2">
+        <img src="images/cocoon.png" class="stage-icon-2" alt="Cocoon Image">
         <span class="year">2025</span>
         <span class="stage">COCOON</span>
         <p>Built data analysis and visualization projects, applying concepts to real datasets.</p>
@@ -794,7 +794,7 @@ body::after {
     <div class="timeline-item left">
       <div class="node active"></div>
       <div class="content">
-        <img src="images/butterfly.png" class="stage-icon-3">
+        <img src="images/butterfly.png" class="stage-icon-3" alt="Butterfly Image">
         <span class="year">2026</span>
         <span class="stage">BUTTERFLY</span>
         <p>Developing real-world tools and pursuing internship opportunities.</p>
@@ -978,7 +978,7 @@ body::after {
         </div>
 
         <div class="project-card reveal reveal-delay-2">
-          <a href="https://jk3690.github.io/" class="project-link" target="_blank"> ↗ </a>
+          <a href="./" class="project-link" target="_blank"> ↗ </a>
           <div class="project-num">// MISSION_002</div>
           <div class="project-title">SYNTHWAVE</div>
           <div class="project-desc">Designed and developed a sci-fi themed portfolio interface using pure HTML and CSS, focusing on UI consistency, animations, and user interaction.</div>
@@ -1025,7 +1025,7 @@ body::after {
       <div class="section-line" style="margin: 0 auto 32px;"></div>
       <p class="contact-desc">Open to internships, collaborations, and learning opportunities in software and data projects.</p>
       <div class="contact-links">
-        <a href="mailto:jeevikakapoor.mams@gmail.com" class="contact-link c">&#x1F4E1; EMAIL</a>
+        <a href="mailto:jeevikakapoor.mams@gmail.com" class="contact-link c">📡EMAIL</a>
         <a href="https://www.linkedin.com/in/jeevika-kapoor-a8a2023b0/" class="contact-link p">&#x1F517; LINKEDIN</a>
         <a href="https://github.com/JK3690" class="contact-link b">&#x2328;&#xFE0F; GITHUB</a>
       </div>
