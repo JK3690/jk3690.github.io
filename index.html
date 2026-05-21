@@ -42,31 +42,25 @@
     border-radius: 50%; position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     box-shadow: var(--glow-cyan);
-    transition: width .2s, height .2s, border-color .2s;
-  }
+    transition: width .2s, height .2s, border-color .2s;}
+  
   #cursor-dot {
     width: 5px; height: 5px; background: var(--cyan); border-radius: 50%;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-    box-shadow: var(--glow-cyan);
-  }
+    box-shadow: var(--glow-cyan);}
+  
   #cursor-cross::before, #cursor-cross::after {
     content: ''; position: absolute; background: var(--cyan);
     top: 50%; left: 50%; transform: translate(-50%,-50%);
-    box-shadow: var(--glow-cyan);
-  }
+    box-shadow: var(--glow-cyan)}
+  
   #cursor-cross::before { width: 14px; height: 1px; }
   #cursor-cross::after  { width: 1px; height: 14px; }
 
   /* SCANLINES */
-  #scanlines {
-    position: fixed; inset: 0; pointer-events: none; z-index: 9000;
-    background: repeating-linear-gradient(
-      to bottom,
-      transparent 0px, transparent 3px,
-      rgba(0,0,0,0.08) 3px, rgba(0,0,0,0.08) 4px
-    );
-    animation: scanPan 8s linear infinite;
-  }
+  #scanlines {position: fixed; inset: 0; pointer-events: none; z-index: 9000;
+    background: repeating-linear-gradient(to bottom, transparent 0px, transparent 3px, rgba(0,0,0,0.08) 3px, rgba(0,0,0,0.08) 4px);
+    animation: scanPan 8s linear infinite;}
   @keyframes scanPan { 0% { background-position: 0 0; } 100% { background-position: 0 100vh; } }
 
   /* CANVAS BG */
@@ -75,12 +69,9 @@
   /* GRID BACKGROUND */
   .grid-bg {
     position: fixed; inset: 0; z-index: 1; pointer-events: none;
-    background-image:
-      linear-gradient(var(--grid-color) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 60px 60px;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
-  }
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);}
 
   /* VIGNETTE */
   .vignette {
@@ -1007,11 +998,12 @@ body::after {
         <div class="project-card reveal reveal-delay-3">
           <a href="#" class="project-link">&#x2197;</a>
           <div class="project-num">// MISSION_004</div>
-          <div class="project-title">CYCLECARE (In Progress)</div>
-          <div class="project-desc">Developing a women’s health tracking system to simplify cycle awareness and symptom logging using no-code tools and structured data workflows.</div>
+          <div class="project-title">INSIGHT LOOP</div>
+          <div class="project-desc">Recommendation system designed to identify customer trends and generate tailored suggestions using behavioral & transactional dat..</div>
           <div class="project-tags">
-            <span class="tag">APPSHEET</span>
-            <span class="tag">GOOGLE SHEETS</span>
+            <span class="tag">PYTHON</span>
+            <span class="tag">PANDAS</span
+            <span class="tag">STREAMLIT</span>
           </div>
         </div>
       </div>
