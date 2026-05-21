@@ -69,8 +69,8 @@ Designed to showcase:
 ### 🔹 Synthwave Portfolio
 > Designed an experimental UI-driven portfolio interface.
 
-### 🔹 CycleCare *(In Progress)*
-> Developing a women’s health tracking system using AppSheet.
+### 🔹 Insight Loop
+> Designed a recommendation system to identify customer trends and generate tailored suggestion.
 
 ---
 
